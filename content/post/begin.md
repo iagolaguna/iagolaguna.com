@@ -3,6 +3,7 @@ title: "O inicio"
 date: 2018-05-08T01:38:52-03:00
 draft: false
 description: Como foi o inicio de tudo?
+image: "images/posts/begin/capa.jpg"
 ---
 Bem eu nunca fui um cara muito dedicado a escrever, porém ao entrar no mundo da tecnologia comecei a gostar de muita coisa que antes não gosta um bom exemplo era sobre estudar, eu **odiava** do fundo do meu coração hahaha.
 \
