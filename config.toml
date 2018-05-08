@@ -11,11 +11,11 @@ theme = "casper"
 
 [params]
   description = "WebDevelover"
-  metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  #metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
   cover = "images/background.jpg"
   author = "Iago Leonardo Laguna"
   authorlocation = "Blumenau, Brazil"
-  authorwebsite = "http://vjeantet.fr"
+  authorwebsite = "https://iagolaguna.netlify.com/"
   authorbio= "Meu nome é Iago atualmente residindo em Blumenau - Santa Catarina Brazil, trabalhando como Full-Stack Develop na @SeniorSistemas"
   #logo = "images/logo.png"
   #googleAnalyticsUserID = "UA-79101-12"
