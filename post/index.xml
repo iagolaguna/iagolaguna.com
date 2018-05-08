@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Iago Leonardo Laguna</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Iago Leonardo Laguna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Tue, 08 May 2018 01:38:52 -0300</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>O inicio</title>
+      <link>/post/begin/</link>
+      <pubDate>Tue, 08 May 2018 01:38:52 -0300</pubDate>
+      
+      <guid>/post/begin/</guid>
+      <description>Bem eu nunca fui um cara muito dedicado a escrever, porém ao entrar no mundo da tecnologia comecei a gostar de muita coisa que antes não gosta um bom exemplo era sobre estudar, eu odiava do fundo do meu coração hahaha. Porém estudando sobre tecnologia, lógica, tabela verdade, Java, JavaScript&amp;lt;3, PHP, entre outros assuntos fui acabando tomando gosto por isso e cá estou agora, começando a disseminar todo o conhecimento que eu adquiri nesses anos de trabalho e estudos, espero que eu possa devolver a comunidade todos os bons frutos que eu colhi da mesma.</description>
+    </item>
+    
+  </channel>
+</rss>
