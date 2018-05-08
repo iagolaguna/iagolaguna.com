@@ -1,0 +1,32 @@
+baseURL = "http://localhost:1313/"
+languageCode = "pt-BR"
+title = "Iago Leonardo Laguna"
+paginate = 5
+DisqusShortname = "Iago L."
+publishDir = "public"
+Copyright = "All rights reserved - 2018"
+canonifyurls = true
+theme = "casper"
+
+
+[params]
+  description = "WebDevelover"
+  metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  cover = "images/background.jpg"
+  author = "Iago Leonardo Laguna"
+  authorlocation = "Blumenau, Brazil"
+  authorwebsite = "http://vjeantet.fr"
+  authorbio= "Meu nome é Iago atualmente residindo em Blumenau - Santa Catarina Brazil, trabalhando como Full-Stack Develop na @SeniorSistemas"
+  #logo = "images/logo.png"
+  #googleAnalyticsUserID = "UA-79101-12"
+  #RSSLink = "http://feeds.feedburner.com/..."
+  githubName = "iagolaguna"
+  codepenName = "iagolaguna"
+  linkedinName = "iago-laguna-106878119"
+  hideHUGOSupport = false
+  comments = true
+  hjsStyle = "default"
+  
+  
+  [params.social]
+  instagramName = "iago.laguna"
