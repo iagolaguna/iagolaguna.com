@@ -10,7 +10,7 @@ tags: ["css","html","study","frontloop","frontloops","learn","frontend"]
 Eaaai galerinha, hoje vamos começar a falar de uma iniciativa muito maneira.
 \
 Como vocês já devem ter percebido o nome do bagulho é [FrontLoops](https://frontloops.io/) ou [FrontLoop](https://frontloops.io/) como eu prefiro chamar na versão singularizada ¬¬ hahaha.
-É uma iniciativa aonde eles disponibilizam 30 layouts diferentes pra você codar, html + css ou como queira. **30 LAYOUTS DIFERENTES** é pra você que na hora de estudar algo  fica assim:
+É uma iniciativa aonde eles disponibilizam 30 layouts diferentes pra você codar, html + css ou como queira. **30 LAYOUTS DIFERENTES** é pra você que na hora de estudar fica assim:
 ![MEME](/images/posts/frontloops-o-desafio/let-me-think.gif)
 Essa é uma otima oportunidade pra meter a cara nos códigos ou melhor nos layouts.
 Deixa eu explicar como tudo funciona pra vocês, seguinte
