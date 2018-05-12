@@ -6,16 +6,16 @@ image: "images/posts/frontloops-o-desafio/capa.png"
 description: Que diabos é Frontloops?
 ---
 
-Eaaai galerinha, hoje vamos começar a falar de uma iniciativa muito maneira e o inicio de uma serie de posts aqui no blog.
+Eaaai galerinha, hoje vamos começar a falar de uma iniciativa muito maneira.
 \
- Como vocês já devem ter percebido o nome do bagulho é [FrontLoops](https://frontloops.io/) ou [FrontLoop](https://frontloops.io/) como eu prefiro chamar na versão singularizada ¬¬ hahaha.
+Como vocês já devem ter percebido o nome do bagulho é [FrontLoops](https://frontloops.io/) ou [FrontLoop](https://frontloops.io/) como eu prefiro chamar na versão singularizada ¬¬ hahaha.
 É uma inciativa aonde eles disponibilizam 30 layouts diferentes pra você codar, html + css ou como queira. **30 LAYOUTS DIFERENTES** é pra você ai que fica assim na hora de inventar oque fazer pra estudar:
 ![MEME](/images/posts/frontloops-o-desafio/let-me-think.gif)
 Essa é uma otima oportunidade pra meter a cara nos códigos ou melhor nos layouts.
-Vamo falar de coisa séria deixa eu explicar como tudo funciona pra vocês, seguinte
-você entra no [site](https://frontloops.io/) deles lá submita o seu e-mail, e dai em diante você vai começar a receber o seguinte e-mail:
+Deixa eu explicar como tudo funciona pra vocês, seguinte
+você entra no [site](https://frontloops.io/) deles e submita o seu e-mail você vai  receber o seguinte e-mail:
 ![E-mail Frontloops](/images/posts/frontloops-o-desafio/frontloops-email.png)
-_Ao clicar no "Finish Loop (n*) - Step (n*)" você vai receber um e-mail com o proximo step, com um zip que possui a seguinte estrutura_:
+_Ao clicar no "Finish Loop (n*) - Step (n*)" você vai receber um novo e-mail com o proximo step, com um zip que possui a seguinte estrutura_:
 
 * Design :
     * Video com as animações que o site deve possuir.
@@ -26,12 +26,13 @@ _Ao clicar no "Finish Loop (n*) - Step (n*)" você vai receber um e-mail com o p
 ![Estrutura de pastas do frontloop](/images/posts/frontloops-o-desafio/frontloop-structure.png)
 
 
-O [FrontLoop](https://frontloops.io/) lá no site deles também você tem a possibilidade de pagar pela versão full aonde você vai receber dicas e os codigos solucionados por eles.
+__Você tem a possibilidade de pagar pela versão full aonde você vai receber dicas e os codigos solucionados por eles.__
+O que é bem legal se você está no começo da sua carreira como desenvolvedor ou para fazer um comparativo das suas soluções. Do [FrontLoop](https://frontloops.io/) é só pessoal agora eu vou explicar oque vai rolar aqui no __blog__.
 \
-Do [FrontLoop](https://frontloops.io/) é só pessoal agora eu vou explicar oque vai rolar aqui no blog, e a serie que se inicia, eu comecei a fazer alguns layouts já e ja tenho algo pronto no meu repositório lá no [GitHub](https://github.com/iagolaguna/frontloop-challanges) se alguem quiser ir se adiantando e indo lá dar uma olhada ;) a ideia é fazer um post no blog para cada step que for sendo feito, explicando a maneira que eu fiz, por que eu fiz determinadas coisas, tricks, coisas que eu aprendi fazendo aquele step e para trocarmos experiencias e irmos aprendendo juntos.
+ Vai rolar uma série de post aqui por que  eu comecei a fazer alguns layouts já e ja tenho alguns steps prontos lá no meu repositório do __[GitHub](https://github.com/iagolaguna/frontloop-challanges)__ se alguém quiser ir se adiantando e indo lá dar uma olhada ;). A ideia é fazer um post  para cada step, explicando/compartilhando a maneira que eu fiz, o que foi feito, tricks, coisas que eu aprendi, etc... E também para trocarmos experiencias e irmos aprendendo juntos.
 \
 \
-_Obrigado pela atenção de todos até aqui e até aproxima Develovers []'s_.
+_Obrigado pela atenção de todos até aqui e até aproxima meuxx queridux Develovers []'s_ - Iago leonardo Laguna.
 
 
 
