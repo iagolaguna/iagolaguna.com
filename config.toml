@@ -10,13 +10,13 @@ theme = "casper"
 
 
 [params]
-  description = "WebDevelover"
+  description = "Develover"
   #metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
   cover = "images/background.jpg"
   author = "Iago Leonardo Laguna"
   authorlocation = "Blumenau, Brazil"
   authorwebsite = "https://iagolaguna.com/"
-  authorbio= "Meu nome é Iago atualmente residindo em Blumenau - Santa Catarina Brazil, trabalhando como Full-Stack Develop na @SeniorSistemas"
+  authorbio= "Meu nome é Iago atualmente residindo em Blumenau - Santa Catarin - Brasil, trabalhando como Full Stack Developer @SeniorSistemas"
   #logo = "images/perfil.jpeg"
   googleAnalyticsUserID = "UA-118971442-1"
   #RSSLink = "http://feeds.feedburner.com/..."
