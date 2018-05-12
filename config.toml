@@ -1,8 +1,8 @@
-baseURL = "/"
+baseURL = "https://iagolaguna.com/"
 languageCode = "pt-BR"
 title = "Iago Leonardo Laguna"
 paginate = 5
-disqusshortname = "iagolaguna"
+DisqusShortname = "iagolaguna"
 publishDir = "public"
 Copyright = "All rights reserved - 2018"
 canonifyurls = true
