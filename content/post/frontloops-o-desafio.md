@@ -1,9 +1,10 @@
 ---
 title: "Frontloops: O Desafio"
-date: 2018-05-12T01:27:36-03:00
+date: 2018-05-12T03:15:36-00:00
 draft: false
 image: "images/posts/frontloops-o-desafio/capa.png"
 description: Que diabos é Frontloops?
+tags: ["css","html","study","frontloop","frontloops","learn","frontend"]
 ---
 
 Eaaai galerinha, hoje vamos começar a falar de uma iniciativa muito maneira.
