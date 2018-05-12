@@ -28,7 +28,7 @@ _Ao clicar no "Finish Loop (n*) - Step (n*)" você vai receber um novo e-mail co
 
 
 __Você tem a possibilidade de pagar pela versão full aonde você vai receber dicas e os códigos solucionados por eles.__
-O que é bem legal se você está no começo da sua carreira como _desenvolvedor_ ou para fazer um comparativo das suas soluções. Do [FrontLoop](https://frontloops.io/) é só pessoal agora eu vou explicar o que vai rolar aqui no __blog__.
+O que é bem legal se você está no começo da sua carreira como _Dev_ ou para fazer um comparativo das suas soluções. Do [FrontLoop](https://frontloops.io/) é só pessoal agora eu vou explicar o que vai rolar aqui no __blog__.
 \
  Vai rolar uma série de post aqui por que  eu comecei a fazer alguns layouts já e ja tenho alguns steps prontos lá no meu repositório do __[GitHub](https://github.com/iagolaguna/frontloop-challanges)__ se alguém quiser ir se adiantando e indo lá dar uma olhada ;). A ideia é fazer um post  para cada step, explicando/compartilhando a maneira que eu fiz, o que foi feito, tricks, coisas que eu aprendi, etc... E também para trocarmos experiências e irmos aprendendo juntos.
 \
