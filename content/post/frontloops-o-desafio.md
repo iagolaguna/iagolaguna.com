@@ -12,9 +12,9 @@ Eaaai galerinha, hoje vamos começar a falar de uma iniciativa muito maneira.
 Como vocês já devem ter percebido o nome do bagulho é [FrontLoops](https://frontloops.io/) ou [FrontLoop](https://frontloops.io/) como eu prefiro chamar na versão singularizada ¬¬ hahaha.
 É uma iniciativa aonde eles disponibilizam 30 layouts diferentes pra você codar, html + css ou como queira. **30 LAYOUTS DIFERENTES** é pra você que na hora de estudar fica assim:
 ![MEME](/images/posts/frontloops-o-desafio/let-me-think.gif)
-Essa é uma otima oportunidade pra meter a cara nos códigos ou melhor nos layouts.
+Essa é uma ótima oportunidade pra meter a cara nos códigos ou melhor nos layouts.
 Deixa eu explicar como tudo funciona pra vocês, seguinte
-você entra no [site](https://frontloops.io/) deles e submita o seu e-mail você vai  receber o seguinte e-mail:
+você entra no [site](https://frontloops.io/) submita o seu e-mail, você vai  receber o seguinte e-mail:
 ![E-mail Frontloops](/images/posts/frontloops-o-desafio/frontloops-email.png)
 _Ao clicar no "Finish Loop (n*) - Step (n*)" você vai receber um novo e-mail com o proximo step, com um zip que possui a seguinte estrutura_:
 
