@@ -10,7 +10,7 @@ theme = "casper"
 
 
 [params]
-  description = "Develover"
+  description = "Devlover"
   #metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
   cover = "images/background.jpg"
   author = "Iago Leonardo Laguna"
