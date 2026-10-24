@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import { PostList } from "@/components/post-list";
+import { getPublishedPosts } from "@/lib/posts";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description: "Todos os posts do blog.",
+  alternates: { canonical: "/blog" },
+};
+
+export default function BlogPage() {
+  return (
+    <>
+      <h1 className="mb-10 text-3xl font-bold">Blog</h1>
+      <PostList posts={getPublishedPosts()} />
+    </>
+  );
+}
