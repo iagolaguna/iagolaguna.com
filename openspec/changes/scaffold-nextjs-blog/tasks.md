@@ -2,10 +2,10 @@
 
 ## 1. Project setup
 
-- [ ] 1.1 Scaffold Next.js 16 (App Router, TypeScript strict, ESLint, Tailwind 4, no `src/`, pnpm) at the repo root without overwriting `openspec/`, `.claude/` or `.gitignore`; verify `pnpm dev` serves the default page and `pnpm build` succeeds
-- [ ] 1.2 Add `lib/site.ts` (base URL `https://iagolaguna.com`, author, description), set `metadataBase`, `<html lang="pt-BR">`, `next/font`, and a minimal header/footer in `app/layout.tsx`; verify the rendered HTML has `lang="pt-BR"` and the site title
-- [ ] 1.3 Configure `app/globals.css` with `@plugin "@tailwindcss/typography"` and system dark mode; verify a `prose dark:prose-invert` test block renders styled in both light and dark system themes
-- [ ] 1.4 Add `typecheck` and `lint` scripts to `package.json`; verify `pnpm typecheck && pnpm lint` pass
+- [x] 1.1 Scaffold Next.js 16 (App Router, TypeScript strict, ESLint, Tailwind 4, no `src/`, pnpm) at the repo root without overwriting `openspec/`, `.claude/` or `.gitignore`; verify `pnpm dev` serves the default page and `pnpm build` succeeds
+- [x] 1.2 Add `lib/site.ts` (base URL `https://iagolaguna.com`, author, description), set `metadataBase`, `<html lang="pt-BR">`, `next/font`, and a minimal header/footer in `app/layout.tsx`; verify the rendered HTML has `lang="pt-BR"` and the site title
+- [x] 1.3 Configure `app/globals.css` with `@plugin "@tailwindcss/typography"` and system dark mode; verify a `prose dark:prose-invert` test block renders styled in both light and dark system themes
+- [x] 1.4 Add `typecheck` and `lint` scripts to `package.json`; verify `pnpm typecheck && pnpm lint` pass
 
 ## 2. Content layer
 
@@ -22,14 +22,14 @@
 ## 4. Reading pages
 
 - [ ] 4.1 Build `app/blog/page.tsx` listing published posts (title link, `pt-BR` date, description only when present); verify order is newest first and a post without description shows no empty element
-- [ ] 4.2 Build `app/blog/[slug]/page.tsx` with `generateStaticParams`, `dynamicParams = false`, title, date, reading time, cover, tags and MDX body in `prose`; add the MDX component map (`next/image`, external links); verify `/blog/frontloops-o-desafio` matches the spec scenario and `pnpm build` lists both posts as static (●)
+- [ ] 4.2 Build `app/blog/[slug]/page.tsx` with `generateStaticParams`, `notFound()` for unknown slugs, title, date, reading time, cover, tags and MDX body in `prose`; add the MDX component map (`next/image`, external links); verify `/blog/frontloops-o-desafio` matches the spec scenario and `pnpm build` lists both posts as static (●)
 - [ ] 4.3 Add `generateMetadata` on the post page (title, description, canonical, Open Graph `article` with cover, Twitter card) and default metadata on other pages; verify with `curl` that `/blog/frontloops-o-desafio` has `og:image`, `og:title` and the canonical link
 - [ ] 4.4 Build the home page (intro placeholder, five latest posts, link to `/blog`) and `app/not-found.tsx` linking to `/blog`; verify `/blog/does-not-exist` returns 404 with the link
 - [ ] 4.5 Add a code block to a migrated post or a sample and check highlighting in light and dark mode; verify all pages render and navigate with JavaScript disabled in the browser
 
 ## 5. Feeds and SEO files
 
-- [ ] 5.1 Implement `app/rss.xml/route.ts` (force-static, RSS 2.0, escaped fields, `application/rss+xml`) and the alternate `<link>` in the root layout; verify the output passes the W3C feed validator
+- [ ] 5.1 Implement `app/rss.xml/route.ts` (prerendered, RSS 2.0, escaped fields, `application/rss+xml`) and the alternate `<link>` in the root layout; verify the output passes the W3C feed validator
 - [ ] 5.2 Implement `app/sitemap.ts` and `app/robots.ts`; verify `/sitemap.xml` lists home, `/blog` and both posts with absolute URLs, and `/robots.txt` points to the sitemap
 
 ## 6. Legacy URLs
