@@ -28,7 +28,7 @@ app/
   not-found.tsx         404 with link to /blog
   blog/page.tsx         index
   blog/[slug]/page.tsx  post page (generateStaticParams, generateMetadata)
-  rss.xml/route.ts      RSS route handler (force-static)
+  rss.xml/route.ts      RSS route handler (prerendered)
   sitemap.ts
   robots.ts
 components/             header, footer, post list, MDX components
@@ -50,7 +50,7 @@ The schema uses `z.object({...}).strict()` so unknown fields fail validation (bl
 
 ### Drafts
 
-`lib/posts.ts` exposes `getPublishedPosts()` that filters out `draft: true` when `process.env.NODE_ENV === "production"`. Every consumer (pages, `generateStaticParams`, RSS, sitemap) goes through this one function, so draft handling can't drift. `dynamicParams = false` on the post route makes unknown and draft slugs return 404 in production.
+`lib/posts.ts` exposes `getPublishedPosts()` that filters out `draft: true` when `process.env.NODE_ENV === "production"`. Every consumer (pages, `generateStaticParams`, RSS, sitemap) goes through this one function, so draft handling can't drift. The project runs with Cache Components (the Next.js 16 scaffold default), where `dynamicParams` is not available. Instead, the post page calls `notFound()` when `getPostBySlug()` finds no published post, so unknown and draft slugs return 404 in production.
 
 ### MDX rendering and code highlighting
 
@@ -80,7 +80,7 @@ A `siteConfig` in `lib/site.ts` holds the base URL, author and description. `met
 
 ### RSS
 
-`app/rss.xml/route.ts` builds the XML string by hand with `export const dynamic = "force-static"`, so it is generated once at build. A feed library isn't worth a dependency for one feed. Titles and descriptions are XML-escaped.
+`app/rss.xml/route.ts` builds the XML string by hand. With Cache Components, a `GET` handler that reads no runtime data is prerendered, so the feed is generated once at build with no `dynamic` config. A feed library isn't worth a dependency for one feed. Titles and descriptions are XML-escaped.
 
 ### Redirects
 

@@ -7,3 +7,11 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store
+.content-collections/
+.pnp
+.pnp.*
+/coverage
+/build
+*.pem
+npm-debug.log*
+.pnpm-debug.log*
