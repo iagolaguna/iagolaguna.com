@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { PostList } from "@/components/post-list";
 import { getPublishedPosts } from "@/lib/posts";
+import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "Todos os posts do blog.",
-  alternates: { canonical: "/blog" },
+  alternates: pageAlternates("/blog"),
 };
 
 export default function BlogPage() {
