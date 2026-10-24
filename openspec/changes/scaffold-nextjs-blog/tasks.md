@@ -38,8 +38,8 @@
 
 ## 7. Integration check
 
-- [ ] 7.1 Run `pnpm typecheck && pnpm lint && pnpm build`, start the production server, and walk every scenario in `specs/` (pages, 404, drafts, feeds, redirects, images); verify each passes and note any failures
-- [ ] 7.2 Write a short `README.md` (stack, `pnpm dev`/`build`, how to add a post with its frontmatter fields); verify the documented commands run as written
+- [x] 7.1 Run `pnpm typecheck && pnpm lint && pnpm build`, start the production server, and walk every scenario in `specs/` (pages, 404, drafts, feeds, redirects, images); verify each passes and note any failures
+- [x] 7.2 Write a short `README.md` (stack, `pnpm dev`/`build`, how to add a post with its frontmatter fields); verify the documented commands run as written
 
 ## Workflow follow-up
 
