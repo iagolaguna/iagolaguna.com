@@ -12,6 +12,8 @@ The Hugo site has been removed and the repo now holds only the OpenSpec setup, s
 - Add a home page with a short intro and the latest posts, a `/blog` index, and a `/blog/[slug]` post page, all prerendered at build time
 - Render post content with Tailwind Typography and build-time Shiki highlighting
 - Add an RSS feed, `sitemap.xml` and `robots.txt`
+- Brand the site as **lgn** (a nickname built from Laguna): a badge logo in the header, favicon and app icons, and "lgn" as the site name in page titles and the feed
+- Use a single light theme, whatever the visitor's system color scheme
 - Redirect old Hugo URLs (`/post/<slug>/`, `/index.xml`, `/post/index.xml`) to their new equivalents with permanent redirects
 - **BREAKING**: post URLs move from `/post/<slug>/` to `/blog/<slug>`. Old links keep working through the redirects
 
@@ -34,7 +36,7 @@ None. There are no existing specs.
 - Giscus comments and analytics (Plausible or Umami)
 - Tag and category pages. Tags are kept in frontmatter but get no pages yet
 - Search, view counters, newsletter, auth, projects page
-- Dark mode toggle. The site follows the system color scheme only
+- Dark mode. The site is light-only
 - Visual design beyond a clean, readable baseline layout
 - Vercel project setup and DNS cutover. This change produces a buildable app, but connecting the domain is a separate step
 - Translating the site. Posts stay in Portuguese (`pt-BR`) as they were written

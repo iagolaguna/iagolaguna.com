@@ -1,7 +1,7 @@
 export const siteConfig = {
   url: "https://iagolaguna.com",
-  name: "Iago Laguna",
-  title: "Iago Laguna",
+  name: "lgn",
+  title: "lgn",
   description: "Blog do Iago Laguna sobre desenvolvimento de software.",
   locale: "pt-BR",
   timeZone: "America/Sao_Paulo",

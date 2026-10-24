@@ -58,13 +58,17 @@ The Next.js 16 scaffold enables Cache Components, but this project turns it off.
 
 MDX is compiled at build time by Content Collections with `rehype-pretty-code` (Shiki) in its rehype plugins, so highlighted HTML is in the compiled output and no highlighter code reaches the browser. The page renders it with the adapter's `MDXContent` component plus a small component map (images through `next/image`, external links with `rel="noopener"`).
 
-Shiki uses dual themes (`github-light` / `github-dark`), switched with a `prefers-color-scheme` CSS rule. That covers the spec's light and dark readability without JavaScript.
+Shiki uses the single `github-light` theme, which matches the light-only site.
 
 Alternative: highlighting at request time with a Server Component. Rejected because every page is static anyway and build-time output is simpler.
 
 ### Styling
 
-Tailwind CSS 4 with CSS-first config (`@import "tailwindcss"` and `@plugin "@tailwindcss/typography"` in `app/globals.css`). Post bodies use `prose` / `dark:prose-invert`. Dark mode follows `prefers-color-scheme` (Tailwind's default `dark:` variant), so no toggle and no client script.
+Tailwind CSS 4 with CSS-first config (`@import "tailwindcss"` and `@plugin "@tailwindcss/typography"` in `app/globals.css`). Post bodies use `prose`. The site is light-only: `:root` sets `color-scheme: light` and the viewport export sets `colorScheme: "light"`, so browsers in dark mode don't restyle form controls or scrollbars. No `dark:` variants are used.
+
+### Branding
+
+The site name is "lgn" (`siteConfig.name`), used in the title template and the RSS feed. The logo is a dark rounded square with "lgn" in white and a small teal square in the corner. The letters are Caprasimo glyph outlines converted to an SVG path, so the logo renders the same in favicons, where web fonts can't load. One artwork is shared by `components/logo.tsx` (header), `app/icon.svg`, `app/favicon.ico` (16/32/48 PNGs), `app/apple-icon.png` (full-bleed, 180px) and `public/logo.svg` / `public/logo-512.png` for avatars.
 
 Fonts come from `next/font` (self-hosted at build time, no layout shift).
 

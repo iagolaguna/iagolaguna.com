@@ -84,7 +84,7 @@ export default async function PostPage({ params }: PageProps<"/blog/[slug]">) {
           preload
         />
       )}
-      <div className="prose dark:prose-invert prose-headings:font-display prose-headings:font-normal max-w-none">
+      <div className="prose prose-headings:font-display prose-headings:font-normal max-w-none">
         <MDXContent code={post.body} components={mdxComponents} />
       </div>
     </article>

@@ -43,7 +43,7 @@ Dates on listings and post pages SHALL be formatted for the `pt-BR` locale, and 
 - **THEN** the date reads "12 de maio de 2018"
 
 ### Requirement: Code blocks are highlighted
-Fenced code blocks with a language SHALL be rendered with syntax highlighting that is present in the delivered HTML, without client-side JavaScript. Highlighting SHALL remain readable in both light and dark system color schemes.
+Fenced code blocks with a language SHALL be rendered with syntax highlighting that is present in the delivered HTML, without client-side JavaScript, using a light palette that matches the site.
 
 #### Scenario: Highlighted code without JavaScript
 - **WHEN** a reader with JavaScript disabled opens a post containing a fenced `ts` code block
@@ -62,3 +62,21 @@ Every page SHALL set a descriptive `<title>`, a meta description and a canonical
 #### Scenario: Post page metadata
 - **WHEN** a crawler fetches `/blog/frontloops-o-desafio`
 - **THEN** the HTML contains a `<title>` with the post title, a meta description, `og:title`, `og:description`, `og:image` pointing to the cover, and a canonical link to `https://iagolaguna.com/blog/frontloops-o-desafio`
+
+### Requirement: Light theme only
+The site SHALL always render with its light theme, regardless of the visitor's system color scheme.
+
+#### Scenario: Visitor uses dark mode
+- **WHEN** a visitor whose operating system is set to dark mode opens any page
+- **THEN** the page renders with a white background and dark text
+
+### Requirement: Site identity
+Every page SHALL show the lgn logo in the header, linking to the home page. Page titles SHALL end with "| lgn" except the home page, whose title is "lgn". The site SHALL provide a favicon and an Apple touch icon with the lgn logo.
+
+#### Scenario: Header and title
+- **WHEN** a reader opens `/blog/begin`
+- **THEN** the header shows the lgn logo linking to `/` and the title is "O inicio | lgn"
+
+#### Scenario: Icons
+- **WHEN** a browser requests `/favicon.ico`, `/icon.svg` or `/apple-icon.png`
+- **THEN** each responds successfully with the lgn logo
