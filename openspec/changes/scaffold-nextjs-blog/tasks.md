@@ -16,20 +16,20 @@
 
 ## 3. Migrate existing posts
 
-- [ ] 3.1 Copy `static/images/` from `master` into `public/images/` keeping paths (`git show`/`git checkout master -- ...` then move); verify `/images/posts/frontloops-o-desafio/capa.png` loads from `pnpm dev`
-- [ ] 3.2 Convert `begin.md` and `frontloops-o-desafio.md` from `master` into `content/posts/*.mdx` (`image` → `cover`, remove `\` line-break hacks, drop `draft: false`, keep tags and Portuguese text); verify both pass the schema in `pnpm build` and render with all inline images
+- [x] 3.1 Copy `static/images/` from `master` into `public/images/` keeping paths (`git show`/`git checkout master -- ...` then move); verify `/images/posts/frontloops-o-desafio/capa.png` loads from `pnpm dev`
+- [x] 3.2 Convert `begin.md` and `frontloops-o-desafio.md` from `master` into `content/posts/*.mdx` (`image` → `cover`, remove `\` line-break hacks, drop `draft: false`, keep tags and Portuguese text); verify both pass the schema in `pnpm build` and render with all inline images
 
 ## 4. Reading pages
 
-- [ ] 4.1 Build `app/blog/page.tsx` listing published posts (title link, `pt-BR` date, description only when present); verify order is newest first and a post without description shows no empty element
-- [ ] 4.2 Build `app/blog/[slug]/page.tsx` with `generateStaticParams`, `notFound()` for unknown slugs, title, date, reading time, cover, tags and MDX body in `prose`; add the MDX component map (`next/image`, external links); verify `/blog/frontloops-o-desafio` matches the spec scenario and `pnpm build` lists both posts as static (●)
-- [ ] 4.3 Add `generateMetadata` on the post page (title, description, canonical, Open Graph `article` with cover, Twitter card) and default metadata on other pages; verify with `curl` that `/blog/frontloops-o-desafio` has `og:image`, `og:title` and the canonical link
-- [ ] 4.4 Build the home page (intro placeholder, five latest posts, link to `/blog`) and `app/not-found.tsx` linking to `/blog`; verify `/blog/does-not-exist` returns 404 with the link
-- [ ] 4.5 Add a code block to a migrated post or a sample and check highlighting in light and dark mode; verify all pages render and navigate with JavaScript disabled in the browser
+- [x] 4.1 Build `app/blog/page.tsx` listing published posts (title link, `pt-BR` date, description only when present); verify order is newest first and a post without description shows no empty element
+- [x] 4.2 Build `app/blog/[slug]/page.tsx` with `generateStaticParams`, `dynamicParams = false`, title, date, reading time, cover, tags and MDX body in `prose`; add the MDX component map (`next/image`, external links); verify `/blog/frontloops-o-desafio` matches the spec scenario and `pnpm build` lists both posts as static (●)
+- [x] 4.3 Add `generateMetadata` on the post page (title, description, canonical, Open Graph `article` with cover, Twitter card) and default metadata on other pages; verify with `curl` that `/blog/frontloops-o-desafio` has `og:image`, `og:title` and the canonical link
+- [x] 4.4 Build the home page (intro placeholder, five latest posts, link to `/blog`) and `app/not-found.tsx` linking to `/blog`; verify `/blog/does-not-exist` returns 404 with the link
+- [x] 4.5 Add a code block to a migrated post or a sample and check highlighting in light and dark mode; verify all pages render and navigate with JavaScript disabled in the browser
 
 ## 5. Feeds and SEO files
 
-- [ ] 5.1 Implement `app/rss.xml/route.ts` (prerendered, RSS 2.0, escaped fields, `application/rss+xml`) and the alternate `<link>` in the root layout; verify the output passes the W3C feed validator
+- [ ] 5.1 Implement `app/rss.xml/route.ts` (force-static, RSS 2.0, escaped fields, `application/rss+xml`) and the alternate `<link>` in the root layout; verify the output passes the W3C feed validator
 - [ ] 5.2 Implement `app/sitemap.ts` and `app/robots.ts`; verify `/sitemap.xml` lists home, `/blog` and both posts with absolute URLs, and `/robots.txt` points to the sitemap
 
 ## 6. Legacy URLs

@@ -24,3 +24,24 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* Shiki dual themes from rehype-pretty-code: pick the palette by color scheme. */
+[data-rehype-pretty-code-figure] pre,
+[data-rehype-pretty-code-figure] code,
+[data-rehype-pretty-code-figure] code span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-rehype-pretty-code-figure] pre,
+  [data-rehype-pretty-code-figure] code,
+  [data-rehype-pretty-code-figure] code span {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+}
+
+[data-rehype-pretty-code-figure] pre {
+  border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+}
