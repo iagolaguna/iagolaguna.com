@@ -5,6 +5,7 @@ import { MDXContent } from "@content-collections/mdx/react";
 import { mdxComponents } from "@/components/mdx-components";
 import { formatDate } from "@/lib/format";
 import { getPostBySlug, getPublishedPosts } from "@/lib/posts";
+import { pageAlternates } from "@/lib/site";
 
 // Only slugs from generateStaticParams exist; anything else is a 404.
 export const dynamicParams = false;
@@ -26,7 +27,7 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: url },
+    alternates: pageAlternates(url),
     openGraph: {
       type: "article",
       url,

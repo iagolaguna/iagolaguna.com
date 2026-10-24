@@ -15,3 +15,14 @@ export const siteConfig = {
 export function absoluteUrl(path: string) {
   return new URL(path, siteConfig.url).toString();
 }
+
+// Next.js replaces `alternates` per page instead of merging it with the
+// layout's, so every page builds it here to keep the RSS feed link.
+export function pageAlternates(canonical: string) {
+  return {
+    canonical,
+    types: {
+      "application/rss+xml": [{ url: "/rss.xml", title: siteConfig.title }],
+    },
+  };
+}

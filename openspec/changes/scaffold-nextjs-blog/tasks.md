@@ -29,8 +29,8 @@
 
 ## 5. Feeds and SEO files
 
-- [ ] 5.1 Implement `app/rss.xml/route.ts` (force-static, RSS 2.0, escaped fields, `application/rss+xml`) and the alternate `<link>` in the root layout; verify the output passes the W3C feed validator
-- [ ] 5.2 Implement `app/sitemap.ts` and `app/robots.ts`; verify `/sitemap.xml` lists home, `/blog` and both posts with absolute URLs, and `/robots.txt` points to the sitemap
+- [x] 5.1 Implement `app/rss.xml/route.ts` (force-static, RSS 2.0, escaped fields, `application/rss+xml`) and the alternate `<link>` in the root layout; verify the output passes the W3C feed validator
+- [x] 5.2 Implement `app/sitemap.ts` and `app/robots.ts`; verify `/sitemap.xml` lists home, `/blog` and both posts with absolute URLs, and `/robots.txt` points to the sitemap
 
 ## 6. Legacy URLs
 
