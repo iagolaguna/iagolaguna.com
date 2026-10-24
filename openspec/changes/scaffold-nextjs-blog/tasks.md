@@ -34,7 +34,7 @@
 
 ## 6. Legacy URLs
 
-- [ ] 6.1 Add redirects in `next.config.ts` (`/index.xml`, `/post/index.xml` → `/rss.xml`; `/post` → `/blog`; `/post/:slug` → `/blog/:slug`, feed rules first); verify with `curl -I` against `pnpm start` that `/post/frontloops-o-desafio/`, `/post/`, `/index.xml` and `/post/index.xml` end at the right target with 308s
+- [x] 6.1 Add redirects in `next.config.ts` (`/index.xml`, `/post/index.xml` → `/rss.xml`; `/post` → `/blog`; `/post/:slug` → `/blog/:slug`, feed rules first); verify with `curl -I` against `pnpm start` that `/post/frontloops-o-desafio/`, `/post/`, `/index.xml` and `/post/index.xml` end at the right target with 308s
 
 ## 7. Integration check
 
