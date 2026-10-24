@@ -41,6 +41,11 @@
 - [x] 7.1 Run `pnpm typecheck && pnpm lint && pnpm build`, start the production server, and walk every scenario in `specs/` (pages, 404, drafts, feeds, redirects, images); verify each passes and note any failures
 - [x] 7.2 Write a short `README.md` (stack, `pnpm dev`/`build`, how to add a post with its frontmatter fields); verify the documented commands run as written
 
+## 8. Branding and light theme
+
+- [x] 8.1 Make the site light-only (remove dark palette, `dark:prose-invert` and dual Shiki themes; set `color-scheme: light`); verify pages stay white with a dark OS color scheme
+- [x] 8.2 Add the lgn badge logo (glyph outlines) to the header, favicon, SVG icon and Apple touch icon, and rename the site to "lgn"; verify icons return 200 and titles end with "| lgn"
+
 ## Workflow follow-up
 
 - Deploy to a Vercel preview and check pages, feed and redirects there
