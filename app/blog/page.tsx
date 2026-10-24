@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
-      <h1 className="mb-10 text-3xl font-bold">Blog</h1>
+      <h1 className="mb-10 font-display text-4xl">Blog</h1>
       <PostList posts={getPublishedPosts()} />
     </>
   );

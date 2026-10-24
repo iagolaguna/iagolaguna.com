@@ -54,7 +54,7 @@ export default async function PostPage({ params }: PageProps<"/blog/[slug]">) {
   return (
     <article>
       <header className="mb-8">
-        <h1 className="text-3xl font-bold">{post.title}</h1>
+        <h1 className="font-display text-4xl">{post.title}</h1>
         <p className="mt-2 text-sm text-foreground/60">
           <time dateTime={post.date}>{formatDate(post.date)}</time>
           {" · "}
@@ -84,7 +84,7 @@ export default async function PostPage({ params }: PageProps<"/blog/[slug]">) {
           preload
         />
       )}
-      <div className="prose dark:prose-invert max-w-none">
+      <div className="prose dark:prose-invert prose-headings:font-display prose-headings:font-normal max-w-none">
         <MDXContent code={post.body} components={mdxComponents} />
       </div>
     </article>

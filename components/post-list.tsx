@@ -8,7 +8,7 @@ export function PostList({ posts }: { posts: Post[] }) {
       {posts.map((post) => (
         <li key={post.slug}>
           <article>
-            <h2 className="text-xl font-semibold">
+            <h2 className="font-display text-2xl">
               <Link href={`/blog/${post.slug}`} className="hover:underline">
                 {post.title}
               </Link>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <section className="mb-14">
-        <h1 className="text-3xl font-bold">{siteConfig.author.name}</h1>
+        <h1 className="font-display text-4xl">{siteConfig.author.name}</h1>
         {/* TODO: replace placeholder intro with Iago's bio */}
         <p className="mt-4 text-lg text-foreground/80">
           Desenvolvedor de software. Aqui eu escrevo sobre o que estou
