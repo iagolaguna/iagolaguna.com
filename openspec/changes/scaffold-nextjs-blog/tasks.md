@@ -9,10 +9,10 @@
 
 ## 2. Content layer
 
-- [ ] 2.1 Install Content Collections (`core`, `next`, `mdx`) and `zod`, wrap `next.config.ts` with `withContentCollections`, and add the `@content-collections` path alias; verify `pnpm build` generates the collection output
-- [ ] 2.2 Define the `posts` collection in `content-collections.ts` over `content/posts/*.mdx` with a strict Zod schema (`title`, `date` required; `description`, `tags`, `cover`, `draft` optional); verify a post missing `title` and a post with an unknown field each fail `pnpm build` with the file name in the error
-- [ ] 2.3 Add the transform: `slug` from file name, `readingTime`, cover-existence check against `public/`, MDX compilation with `rehype-pretty-code` (dual `github-light`/`github-dark` themes); verify a missing cover fails the build and a sample post's compiled output contains highlighted spans
-- [ ] 2.4 Implement `lib/posts.ts` (`getPublishedPosts()` sorted by date descending with draft filtering in production, `getPostBySlug()`) and `lib/format.ts` (`pt-BR` long date, `America/Sao_Paulo` zone); verify with a temporary draft post that it shows in `pnpm dev` and is absent from `pnpm build` output, and that 2018-05-12 formats as "12 de maio de 2018"
+- [x] 2.1 Install Content Collections (`core`, `next`, `mdx`) and `zod`, wrap `next.config.ts` with `withContentCollections`, and add the `@content-collections` path alias; verify `pnpm build` generates the collection output
+- [x] 2.2 Define the `posts` collection in `content-collections.ts` over `content/posts/*.mdx` with a strict Zod schema (`title`, `date` required; `description`, `tags`, `cover`, `draft` optional); verify a post missing `title` and a post with an unknown field each fail `pnpm build` with the file name in the error
+- [x] 2.3 Add the transform: `slug` from file name, `readingTime`, cover-existence check against `public/`, MDX compilation with `rehype-pretty-code` (dual `github-light`/`github-dark` themes); verify a missing cover fails the build and a sample post's compiled output contains highlighted spans
+- [x] 2.4 Implement `lib/posts.ts` (`getPublishedPosts()` sorted by date descending with draft filtering in production, `getPostBySlug()`) and `lib/format.ts` (`pt-BR` long date, `America/Sao_Paulo` zone); verify with a temporary draft post that it shows in `pnpm dev` and is absent from `pnpm build` output, and that 2018-05-12 formats as "12 de maio de 2018"
 
 ## 3. Migrate existing posts
 
