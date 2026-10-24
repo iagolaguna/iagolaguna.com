@@ -1,0 +1,39 @@
+schema: spec-driven
+
+context: |
+  iagolaguna.com: personal dev blog and portfolio for Iago Laguna, rebuilt from
+  scratch (the old Hugo site lives in git history on master, including the
+  original posts under content/post/ and images under static/images/).
+  The site starts as a blog but is meant to grow into a larger personal
+  platform, and doubles as a way to practice professional Next.js skills.
+
+  Stack (use these unless a change proposal explicitly argues otherwise):
+  - Next.js with the App Router, React Server Components, TypeScript (strict)
+  - pnpm as package manager
+  - Content: MDX posts stored in the repo, loaded with a typed content layer
+    (Velite or Content Collections) with validated frontmatter
+  - Code highlighting: Shiki via rehype-pretty-code, at build time
+  - Styling: Tailwind CSS with @tailwindcss/typography for post content
+  - Static by default: prerender posts with generateStaticParams; add dynamic
+    features (route handlers, server actions) only where a feature needs them
+  - SEO/sharing: generated Open Graph images (next/og), RSS route handler,
+    sitemap.ts, robots.ts
+  - Comments: Giscus. Analytics: privacy-friendly (Plausible or Umami)
+  - Hosting: Vercel
+
+  Planned growth (not v1): view counters/reactions, newsletter signup, auth
+  for a guestbook/admin area, projects page backed by the GitHub API, search.
+
+  Constraints:
+  - Keep URLs of migrated posts stable or add redirects from the old Hugo
+    paths so existing links keep working
+  - Pages must work without client-side JavaScript except for opt-in
+    interactive components
+
+rules:
+  proposal:
+    - Always state what is out of scope
+  design:
+    - Prefer Server Components; justify every "use client" boundary
+  tasks:
+    - Break tasks into chunks of max 2 hours
